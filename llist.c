@@ -1,3 +1,12 @@
+/*
+
+ * Author: Hesham Salah
+ * Email: heshamsalahuldeen@gmail.com
+ * Linkedin: https://eg.linkedin.com/in/heshamsalahuldeen
+ * Github: https://github.com/Heshamsalah
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,12 +19,12 @@ typedef struct node
 void insertNode(node** headRef, int newData); /* insert a new node and make it the head of the list (moving the head) */
 void append(node** headRef, int newData); /* add a new node to the last of the list without moving the head */
 void addAfter(node* prevNode, int newData); /* add a new node after a given node */
-void deleteNodeWithValue(node** headRef, int searchKey);
-void deleteNodeWithPosition(node** headRef, int searchKey);
+void deleteNodeWithValue(node** headRef, int searchKey); /* delete using the value of the node */
+void deleteNodeWithPosition(node** headRef, int searchKey); /* delete using the position of the node */
 void printList(node* temp);
 int scanUserInput(node** listHead);
-int getLength(node* listHead);
-int getLengthRecursive(node* listHead);
+int getLength(node* listHead); /* calculate the length of the list */
+int getLengthRecursive(node* listHead); /* calculate the length of the list using recursion method */
 
 
 int main(){
